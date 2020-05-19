@@ -82,10 +82,13 @@ def ej3():
 
     # Almacenar su nombre completo en una variable
     # nombre_completo = .....
+    nombre_completo = nombre+apellido
+    nombre_completo_len = len(nombre_completo)
+    print("El nombre: {} {} tiene {} caracteres".format(nombre,apellido,nombre_completo_len))
 
     # Imprimir la cantidad de letras que posee su nombre completo
 
-def ej3():
+def ej():
     # Ejemplos variables de texto
 
     # Ingrese tres palabras y arme un acrónimo con ellas
@@ -127,6 +130,6 @@ if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
     #ej2()
-    #ej3()
-    ej4()
+    ej3()
+    #ej4()
 
