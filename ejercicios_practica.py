@@ -54,7 +54,7 @@ def ej1():
 
     
 
-     
+   
 
 def ej2():
     # Ejercicios de práctica numérica y cadenas
@@ -162,8 +162,11 @@ def ej4():
     nomc1 = str(input())
     print("Ingrese nombre y apellido de la segunda persona ")
     nomc2 = str(input())
-    nombre1,apellido1 = nomc1.split("")
-    nombre2,apellido2 = nomc2.split(" ")
+    nombre1, apellido1 = nomc1.split(" ")
+    nombre2, apellido2 = nomc2.split(" ")
+
+    pariente = apellido2 in apellido1
+    print("Estas personas comparten el mismo apellido? {}".format(pariente))
     
 
 
@@ -199,5 +202,5 @@ if __name__ == '__main__':
     #ej1()
     #ej2()
     #ej3()
-    #ej4()
+    ej4()
     #ej5()
