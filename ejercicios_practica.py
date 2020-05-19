@@ -31,6 +31,30 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    print("Ingrese un numero: ")
+    numero1 = int(input())
+    print("Ingrese otro numero")
+    numero2 = int(input())
+    
+    suma = numero1 + numero2
+    print("La suma de los numeros es: ",suma)
+
+    resta = numero1-numero2
+    print("La resta de los numeros es: ",resta)
+
+    division = numero1/numero2
+    print("La division de los numeros es:",division )
+
+    multiplacion = numero1 * numero2
+    print("La multiplicacion de los numeros es:",multiplacion)
+
+    potencia = numero1**numero2
+    print("El resultado de la potencia es: ",potencia)
+
+
+    
+
+     
 
 def ej2():
     # Ejercicios de práctica numérica y cadenas
@@ -50,6 +74,19 @@ def ej2():
       está hablando.
 
     '''
+    print("Ingrese nombre completo")
+    nombre = str(input())
+    print("Ingrese dni")
+    dni = int(input())
+    print("Ingrese edad")
+    edad = int(input())
+    print("Ingrese altura")
+    altura = float(input())
+
+    print("El nombre completo es:{} y el dni es: {}".format(nombre,dni))
+    print("El nombre es {} tiene la edad de {} y su altura es de {}".format(nombre,edad,altura))
+
+    
 def ej3():
     # Ejercicios de práctica con cadenas
 
@@ -79,6 +116,17 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
         
     '''
+    print("Ingresar el nombre y apellido del padre: ")
+    nombrecompleto = str(input())
+    print("Ingresar el nombre y el apellido de la madre: ")
+    nombrecompleto2 = str(input())
+    print("Ingrese el nombre del hijo: ")
+    nombreh = str(input())
+
+
+    nombre1,apellido1 = nombrecompleto.split(" ")
+    nombre2,apellido2 = nombrecompleto2.split(" ")
+    print("El nombre completo del hijo es: {} {} {}".format(nombreh,apellido1,apellido2))
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -110,6 +158,14 @@ def ej4():
     
         
     '''
+    print("Ingrese nombre y apellido de la primer persona")
+    nomc1 = str(input())
+    print("Ingrese nombre y apellido de la segunda persona ")
+    nomc2 = str(input())
+    nombre1,apellido1 = nomc1.split("")
+    nombre2,apellido2 = nomc2.split(" ")
+    
+
 
 def ej5():
     # Ejercicios de práctica con cadenas
@@ -140,7 +196,7 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    #ej1()
     #ej2()
     #ej3()
     #ej4()
