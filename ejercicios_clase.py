@@ -114,15 +114,19 @@ def ej4():
     print('Ingrese palabra 2:')
     palabra_2 = str(input())
 
-    # De la primera palabra tome las primeras tres letras, utilice el operador :
-    # De la segunda palabra tome las últimas tres letras, utilice el operador :
-    # Formar una nueva palabra con los recortes solicitados
-    # Imprima en pantalla los resultados
 
+    # De la primera palabra tome las primeras tres letras, utilice el operador :
+    caracteres1 = palabra_1[0:3]
+    # De la segunda palabra tome las últimas tres letras, utilice el operador :
+    caracteres2 = palabra_2[-3:]
+    # Formar una nueva palabra con los recortes solicitados
+    palabra_nueva = caracteres1 + caracteres2
+    # Imprima en pantalla los resultados
+    print("La palabra formada con los tres primeros caracteres de la primera y los 3 ultimos de la segunda es: {}".format(palabra_nueva)) 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
+    #ej1()
     #ej2()
     #ej3()
-    #ej4()
+    ej4()
 
