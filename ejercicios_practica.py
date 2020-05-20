@@ -179,6 +179,7 @@ def ej5():
     - Todas las letras en minúsculas
     - Todas las letras en mayúsculas
     - Solo la primera letra del nombre en mayúscula
+    
 
     NOTA: Para realizar este ejercicio deberá usar los siguientes métodos
     de strings:
@@ -196,11 +197,21 @@ def ej5():
     
 
     '''
+    print ("Ingrese su nombre" )
+    nombre = str(input())
+
+    nombre_mayus = nombre.upper()
+    nombre_minus = nombre.lower()
+    caracter = nombre[0].upper()
+
+    print("El nombre en mayusculas es: {}".format(nombre_mayus))
+    print("El nombre en minusculas es {}".format(nombre_minus))
+    print("El primer caracter en mayusculas es: {}".format(caracter))
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
     #ej3()
-    ej4()
-    #ej5()
+    #ej4()
+    ej5()
